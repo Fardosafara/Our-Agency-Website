@@ -72,7 +72,7 @@ export default function About() {
           <div className="grid md:grid-cols-3 gap-8 mt-12">
             {[
               { number: 100, label: "Projects Delivered" },
-              { number: 50, label: "Happy Clients" },
+              { number: 100, label: "Happy Clients" },
             ].map((stat, index) => (
               <motion.div
                 key={index}
