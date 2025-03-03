@@ -55,7 +55,7 @@ export default function About() {
             Transforming Digital Dreams Into Reality
           </h2>
           <p className="text-xl text-gray-600 leading-relaxed mb-8 font-poppins">
-            In 2024, two best friends and software engineering graduates, both named Fardowsa, founded DosaWeb
+            In 2024, two best friends and software engineering graduates, both named Fardowsa's, founded DosaWeb
             Solutions—a company born from their shared passion for technology and digital innovation. What started as
             late-night brainstorming sessions became a thriving business dedicated to building modern websites and
             offering strategic digital marketing services.
@@ -112,7 +112,7 @@ export default function About() {
           ))}
         </div>
 
-        {/* Team Section */}
+        {/* Team Section
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -153,7 +153,7 @@ export default function About() {
               </Card>
             </motion.div>
           ))}
-        </div>
+        </div> */}
       </div>
     </section>
   )

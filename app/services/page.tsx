@@ -2,8 +2,11 @@
 
 import { motion } from "framer-motion"
 import { Card, CardContent } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
+import { Badge} from "@/components/ui/badge"
+import { Button} from "@/components/ui/button"
+
 import { Check, Megaphone, Share2, Globe, Package, Sparkles } from "lucide-react"
+import Link from 'next/link';
 
 const services = [
   {
@@ -131,21 +134,18 @@ export default function Services() {
           className="mt-20 text-center"
         >
           <div className="p-12 bg-gradient-to-r from-purple-600 to-blue-600 rounded-2xl">
-            <div className="inline-flex items-center gap-2 mb-6 bg-white/10 px-4 py-2 rounded-full">
-              <Sparkles className="h-5 w-5 text-yellow-300" />
-              <span className="text-white font-medium">Why Choose Our Package?</span>
+              <div className="inline-flex items-center gap-2 mb-6 bg-white/10 px-4 py-2 rounded-full">
+                <Sparkles className="h-5 w-5 text-yellow-300" />
+                <span className="text-white font-medium">Why Choose Our Package?</span>
+              </div>
+              <h3 className="text-3xl font-bold text-white mb-4">Transform Your Digital Presence Today</h3>
+              <p className="text-blue-100 text-lg mb-8 max-w-2xl mx-auto">
+                Get everything you need to grow your business online with our affordable and flexible pricing options
+              </p>
+              <Button variant="outline" size="lg" className="bg-white text-blue-600 hover:bg-blue-50" asChild>
+                <Link href="/contact">Get Started Now</Link>
+              </Button>
             </div>
-            <h3 className="text-3xl font-bold text-white mb-4">Transform Your Digital Presence Today</h3>
-            <p className="text-blue-100 text-lg mb-8 max-w-2xl mx-auto">
-              Get everything you need to grow your business online with our affordable and flexible pricing options
-            </p>
-            <a
-              href="#contact"
-              className="inline-block bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors"
-            >
-              Get Started Now
-            </a>
-          </div>
         </motion.div>
       </div>
     </section>

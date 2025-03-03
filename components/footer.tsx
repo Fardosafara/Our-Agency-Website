@@ -23,12 +23,12 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="/services" className="text-white hover:text-white/80 transition-colors">
-                  Content Creation
+                Google Ads Campaign
                 </Link>
               </li>
               <li>
                 <Link href="/services" className="text-white hover:text-white/80 transition-colors">
-                  Web Hosting
+                Social Media Management
                 </Link>
               </li>
               <li>
@@ -64,13 +64,18 @@ export default function Footer() {
             <h3 className="text-lg text-white font-semibold mb-4">Contact Us</h3>
             <ul className="space-y-2 text-white">
               <li>
-                <a href="mailto:contact@dosaweb.com" className="hover:text-white/80 transition-colors">
-                  contact@dosaweb.com
+                <a href="mailto:dosawebsolutions@gmail.com" className="hover:text-white/80 transition-colors">
+                dosawebsolutions@gmail.com
                 </a>
               </li>
               <li>
                 <a href="tel:+254702383309" className="hover:text-white/80 transition-colors">
                   +254 702383309
+                </a>
+              </li>
+              <li>
+                <a href="tel:+254702383309" className="hover:text-white/80 transition-colors">
+                  +254 726851015
                 </a>
               </li>
             </ul>

@@ -28,11 +28,11 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: {
-    default: "Digital Agency | Web Development & Digital Marketing Agency",
-    template: "%s | Digital Agency",
+    default: "DosaWeb Solutions | Web Development & Digital Marketing Agency",
+    template: "%s | DosaWeb Solutions",
   },
   description:
-    "Transform your digital presence with our agency. Expert web development, SEO, and digital marketing services to help your business grow online.",
+    "Transform your digital presence with dosaweb solutions. Expert web development, SEO, and digital marketing services to help your business grow online.",
   keywords: [
     "web development",
     "digital marketing",

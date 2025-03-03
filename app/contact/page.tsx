@@ -11,6 +11,7 @@ import { Textarea } from "@/components/ui/textarea"
 import { Card, CardContent } from "@/components/ui/card"
 import { useToast } from "@/components/ui/use-toast"
 import { Mail, Phone, MapPin, Clock, Sparkles } from "lucide-react"
+import Link from 'next/link';
 
 const formSchema = z.object({
   name: z.string().min(2, "Name must be at least 2 characters"),
@@ -21,12 +22,7 @@ const formSchema = z.object({
 type FormData = z.infer<typeof formSchema>
 
 const contactInfo = [
-  {
-    icon: Mail,
-    title: "Email",
-    content: "contact@dosaweb.com",
-    link: "mailto:contact@dosaweb.com",
-  },
+  
   {
     icon: Phone,
     title: "Tel1",
@@ -148,9 +144,11 @@ export default function Contact() {
                     Get everything you need to grow your business online with our affordable and flexible pricing
                     options
                   </p>
-                  <Button variant="outline" size="lg" className="bg-white text-blue-600 hover:bg-blue-50">
-                    Get Started Now
-                  </Button>
+                  <Link href="/contact" passHref>
+  <Button variant="outline" size="lg" className="bg-white text-blue-600 hover:bg-blue-50">
+    Get Started Now
+  </Button>
+</Link>
                 </div>
               </motion.div>
             </div>
