@@ -116,20 +116,20 @@ const projects = [
     image: "/portfolio2.jpeg",
     link: "https://ewangan-tour-safaris-1nqj.vercel.app/",
   },
-  {
-    title: "Event Planner",
-    category: "Web Development",
-    description: "An intuitive event planner platform showcasing past events and seamless booking.",
-    image: "/portfolio1.jpeg",
-    link: "https://trium-events.vercel.app/",
-  },
-  {
-    title: "Hospital",
-    category: "Web Development",
-    description: "A cutting-edge hospital website with seamless patient and doctor interaction.",
-    image: "/portfolio5.jpeg",
-    link: "https://www.mnqcare.com/",
-  },
+  // {
+  //   title: "Event Planner",
+  //   category: "Web Development",
+  //   description: "An intuitive event planner platform showcasing past events and seamless booking.",
+  //   image: "/portfolio1.jpeg",
+  //   link: "https://trium-events.vercel.app/",
+  // },
+  // {
+  //   title: "Hospital",
+  //   category: "Web Development",
+  //   description: "A cutting-edge hospital website with seamless patient and doctor interaction.",
+  //   image: "/portfolio5.jpeg",
+  //   link: "https://www.mnqcare.com/",
+  // },
 ]
 
 export default function Home() {
