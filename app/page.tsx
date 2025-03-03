@@ -209,7 +209,7 @@ export default function Home() {
             >
               {[
                 { number: 100, label: "Projects Completed" },
-                { number: 50, label: "Happy Clients" },
+                { number: 100, label: "Happy Clients" },
               ].map((stat, index) => (
                 <div key={index} className="text-center">
                   <div className="text-3xl md:text-4xl font-bold text-white mb-2">
