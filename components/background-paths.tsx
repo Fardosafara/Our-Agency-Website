@@ -61,7 +61,7 @@ export default function BackgroundPaths({
   const words = title.split(" ")
 
   return (
-    <div className="relative min-h-screen w-full flex items-center justify-center overflow-hidden bg-white pt-24">
+    <div className="relative w-full h-[25vh] sm:h-[70vh] md:h-screen flex items-center justify-center overflow-hidden bg-white">
       <div className="absolute inset-0">
         <FloatingPaths position={1} />
         <FloatingPaths position={-1} />
@@ -103,7 +103,7 @@ export default function BackgroundPaths({
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 1.5 }}
-              className="text-xl text-black mb-10 max-w-2xl mx-auto"
+              className="text-xl text-gray-400 mb-10 max-w-2xl mx-auto"
             >
               {subtitle}
             </motion.p>

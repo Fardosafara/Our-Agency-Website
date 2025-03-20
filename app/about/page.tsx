@@ -135,11 +135,11 @@ export default function About() {
   return (
     <section id="about" className="relative overflow-hidden" ref={containerRef}>
       {/* Hero Section */}
-      <div className="relative min-h-screen flex items-center justify-center overflow-hidden text-white">
+      <div className="relative w-full h-[25vh] sm:h-[70vh] md:h-screen flex items-center justify-center overflow-hidden text-white">
         {/* Office Background Image */}
         <div className="absolute inset-0 z-0">
           <Image src="/luxury-office.jpg" alt="Luxury Office" fill className="object-cover opacity-90" priority />
-          <div className="absolute inset-0 bg-gradient-to-b from-blue-900/30 via-transparent to-blue-900/30"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-blue-900/40 via-blue-900/20 to-blue-900/40"></div>
         </div>
 
         {/* Particle background */}
@@ -185,71 +185,69 @@ export default function About() {
               scale: scale1,
             }}
           >
-            <div className="bg-black/40 backdrop-blur-sm p-8 rounded-2xl">
-              <motion.div
-                initial={{ opacity: 0, scale: 0.8 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.5, delay: 0.1 }}
-                className="mb-6"
-              >
-                <Badge className="bg-white/10 text-white border border-white/20 backdrop-blur-sm px-4 py-1.5 text-sm">
-                  About Us
-                </Badge>
-              </motion.div>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              className="mb-6"
+            >
+              <Badge className="bg-white/10 text-white border border-white/20 backdrop-blur-sm px-4 py-1.5 text-sm">
+                About Us
+              </Badge>
+            </motion.div>
 
-              <motion.h1
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.2 }}
-                className="text-5xl md:text-7xl font-bold mb-6 leading-tight tracking-tight"
-              >
-                We're{" "}
-                <span className="relative inline-block">
-                  <span className="relative z-10 bg-gradient-to-r from-blue-400 via-blue-600 to-blue-400 text-transparent bg-clip-text">
-                    DosaWeb Solutions
-                  </span>
-                  <motion.span
-                    className="absolute bottom-2 left-0 w-full h-2 bg-blue-600/30 rounded-full"
-                    initial={{ width: 0 }}
-                    animate={{ width: "100%" }}
-                    transition={{ duration: 0.8, delay: 0.6 }}
-                  />
+            <motion.h1
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="text-5xl md:text-7xl font-bold mb-6 leading-tight tracking-tight text-white drop-shadow-md"
+            >
+              We're{" "}
+              <span className="relative inline-block">
+                <span className="relative z-10 bg-white text-transparent bg-clip-text">
+                  DosaWeb Solutions
                 </span>
-              </motion.h1>
+                <motion.span
+                  className="absolute bottom-2 left-0 w-full h-2 bg-blue-600/30 rounded-full"
+                  initial={{ width: 0 }}
+                  animate={{ width: "100%" }}
+                  transition={{ duration: 0.8, delay: 0.6 }}
+                />
+              </span>
+            </motion.h1>
 
-              <motion.p
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.3 }}
-                className="text-xl md:text-2xl text-blue-100 mb-8 leading-relaxed"
-              >
-                Crafting digital experiences that elevate brands and drive exceptional results
-              </motion.p>
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.3 }}
+              className="text-xl md:text-2xl text-white mb-8 leading-relaxed drop-shadow-md max-w-2xl mx-auto"
+            >
+              Crafting digital experiences that elevate brands and drive exceptional results
+            </motion.p>
 
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.4 }}
-                className="flex justify-center"
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.4 }}
+              className="flex justify-center"
+            >
+              <Button
+                size="lg"
+                className="bg-white text-black hover:bg-blue-50 shadow-lg hover:shadow-xl transition-all duration-300 group text-lg px-8 py-6"
               >
-                <Button
-                  size="lg"
-                  className="bg-white text-black hover:bg-blue-50 shadow-lg hover:shadow-xl transition-all duration-300 group text-lg px-8 py-6"
-                >
-                  <Link href="/contact" className="flex items-center">
-                    Work With Us
-                    <motion.span
-                      className="ml-2"
-                      initial={{ x: 0 }}
-                      whileHover={{ x: 5 }}
-                      transition={{ type: "spring", stiffness: 400, damping: 10 }}
-                    >
-                      <ArrowRight className="h-5 w-5" />
-                    </motion.span>
-                  </Link>
-                </Button>
-              </motion.div>
-            </div>
+                <Link href="/contact" className="flex items-center">
+                  Work With Us
+                  <motion.span
+                    className="ml-2"
+                    initial={{ x: 0 }}
+                    whileHover={{ x: 5 }}
+                    transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                  >
+                    <ArrowRight className="h-5 w-5" />
+                  </motion.span>
+                </Link>
+              </Button>
+            </motion.div>
           </motion.div>
         </div>
 
@@ -267,7 +265,7 @@ export default function About() {
       </div>
 
       {/* Main Content */}
-      <div className="bg-white py-20">
+      <div className="bg-white py-16 md:py-20">
         <div className="container mx-auto px-4">
           {/* Tabs Section */}
           <div className="max-w-6xl mx-auto mb-16">
@@ -559,7 +557,7 @@ export default function About() {
       </div>
 
       {/* CTA Section */}
-      <div className="bg-gradient-to-r from-blue-600 to-blue-600 py-20 relative overflow-hidden">
+      <div className="bg-gradient-to-r from-blue-600 to-blue-600 py-16 md:py-20 relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('/grid-pattern.svg')] bg-center opacity-10"></div>
         <motion.div
           className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-400/10 rounded-full blur-3xl"
